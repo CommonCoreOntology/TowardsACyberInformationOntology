@@ -112,14 +112,14 @@ cco:ProcessOfProperFunctioning rdf:type owl:Class ;
 
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementOfCanonicity??
-cco:MeasurementOfCanonicity rdf:type owl:Class ;
+cco:MeasurementOfCanonicity?? rdf:type owl:Class ;
                              dcterms:created "2023-01-13T09:53:10-05:00"^^xsd:dateTime ;
                              cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
                              cco:issue "This class needs to be figured out".
 
 
 ### http://www.ontologyrepository.com/CommonCoreOntologies/has_information_copy_descendent
-cco:has_information_copy_descendent rdf:type owl:ObjectProperty
+cco:has_information_copy_descendent rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf RO:0002350 ;
                              dcterms:created "2023-02-01T17:28:01-05:00"^^xsd:dateTime ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
@@ -130,7 +130,7 @@ cco:has_information_copy_descendent rdf:type owl:ObjectProperty
                              skos:prefLabel "has information copy descendent"@en .
 
 ### http://www.ontologyrepository.com/CommonCoreOntologies/has_information_copy_ancestor
-cco:has_information_copy_ancestor rdf:type owl:ObjectProperty
+cco:has_information_copy_ancestor rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf RO:0002350 ;
                              dcterms:created "2023-02-01T17:28:01-05:00"^^xsd:dateTime ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
