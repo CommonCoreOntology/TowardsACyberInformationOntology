@@ -1,4 +1,4 @@
-@prefix : <http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology#> .
+@prefix : <http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology#> .
 @prefix gn: <http://www.geonames.org/ontology#> .
 @prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
@@ -11,17 +11,17 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology> .
+@base <http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology> .
 
-<http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology> rdf:type owl:Ontology ;
-                                                                                 owl:versionIRI <http://www.ontologyrepository.com/CommonCoreOntologies/Exp/2022-01-12/NewInformationOntology> ;
+<http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology> rdf:type owl:Ontology ;
+                                                                                 owl:versionIRI <http://www.ontologyrepository.com/CommonCoreOntologies/Exp/2022-01-12/ActOfCopyingOntology> ;
                                                                                  owl:imports <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntology> ;
                                                                                  cco:code_license <https://opensource.org/licenses/BSD-3-Clause> ;
                                                                                  cco:content_license <https://creativecommons.org/licenses/by/3.0/> ;
                                                                                  rdfs:comment "The use of 'Exp' in the ontology IRI indicates that the ontology is still experimental. All cco:issue annotations must be resolved and removed before changing this status."@en ,
                                                                                               "This ontology is designed to represent entities relevant to information, that which carries information, and so on."@en ;
-                                                                                 rdfs:label "New Information Ontology"@en ;
-                                                                                 owl:versionInfo "Version 0.1"@en .
+                                                                                 rdfs:label "Act Of Copying Ontology"@en ;
+                                                                                 owl:versionInfo "Version 0.2"@en .
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/ActOfEncoding
 cco:ActOfEncoding rdf:type owl:Class ;
@@ -29,7 +29,7 @@ cco:ActOfEncoding rdf:type owl:Class ;
                              dcterms:created "2023-01-12T11:06:08-05:00"^^xsd:dateTime ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              cco:definition "An Intentional Act whereby an Agent forms a Material Entity to carry some intended Information Content Entity."@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              rdfs:label "Act of Encoding"@en ;
                              skos:prefLabel "Act of Encoding"@en .
 
@@ -39,7 +39,7 @@ cco:ReferenceCarrier rdf:type owl:Class ;
                              dcterms:created "2023-02-17T12:11:21-05:00"^^xsd:dateTime ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              cco:definition "A material entity that is the input to an Act of Copying and that carries the ICE intended to be carried by the output of that Act of Copying. "@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              rdfs:label "Reference Carrier"@en ;
                              skos:prefLabel "Reference Carrier"@en .
 
@@ -49,7 +49,7 @@ cco:ActOfCopying rdf:type owl:Class ;
                              dcterms:created "2023-01-12T11:11:19-05:00"^^xsd:dateTime ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              cco:definition "An Act of Encoding whereby an Agent forms a Material Entity with the intention that this Material Entity carry the same ICE as some Reference Carrier."@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              rdfs:label "Act of Copying"@en ;
                              skos:prefLabel "Act of Copying"@en .
 
@@ -59,7 +59,7 @@ cco:ActOfInformationCarrierTransition rdf:type owl:Class ;
                              dcterms:created "2023-01-12T11:24:32-05:00"^^xsd:dateTime ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              cco:definition "An Act of Copying whereby an Agent forms a Material Entity that is of a type different from the Reference Carrier, but which bears the same type of concretizing SDCs."@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              rdfs:label "Act of Information Carrier Transition"@en ;
                              skos:prefLabel "Act of Information Carrier Transition"@en .
 
@@ -69,7 +69,7 @@ cco:ActOfConcretizerTransition rdf:type owl:Class ;
                              dcterms:created "2023-01-12T11:24:32-05:00"^^xsd:dateTime ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              cco:definition "An Act of Copying whereby an Agent forms a Material Entity that bears concretizing SDCs of types distinct from those inhering in the Reference Carrier, but where that Material Entity is of the same type."@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              rdfs:label "Act of Concretizer Transition"@en ;
                              skos:prefLabel "Act of Concretizer Transition"@en .
 
@@ -79,7 +79,7 @@ cco:ActOfCarrierAndConcretizerTransition rdf:type owl:Class ;
                              dcterms:created "2023-02-17T12:14:25-05:00"^^xsd:dateTime ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              cco:definition "An Act of Copying that is both an Act of Information Carrier Transition and an Act of Concretizer Transition."@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              rdfs:label "Act of Carrier and Concretizer Transition"@en ;
                              skos:prefLabel "Act of Carrier and Concretizer Transition"@en .
 
@@ -89,7 +89,7 @@ cco:ActOfDuplication rdf:type owl:Class ;
                              dcterms:created "2023-01-13T09:18:28-05:00"^^xsd:dateTime ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              cco:definition "An Act of Copying whereby an Agent forms a Material Entity that is of the same type and bears the same type of concretizing SDCs as the Reference Carrier."@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              rdfs:label "Act of Duplication"@en ;
                              skos:prefLabel "Act of Duplication"@en .
 
@@ -99,7 +99,7 @@ cco:InformationCarrierStructureEntity rdf:type owl:Class ;
                              dcterms:created "2023-02-17T12:16:50-05:00"^^xsd:dateTime ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              cco:definition "A Directive Information Content Entity that prescribes the formation of a Material Entity that is a copy of a Reference Carrier."@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              rdfs:label "Information Carrier Structure Entity"@en ;
                              skos:prefLabel "Information Carrier Structure Entity"@en .
 
@@ -109,7 +109,7 @@ cco:ActOfEncodingAnInformationCarrierStructureEntity rdf:type owl:Class ;
                              dcterms:created "2023-02-17T12:18:55-05:00"^^xsd:dateTime ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              cco:definition "An Act of Encoding, that is intended to be an occurrent part of an act of copying, wherein an Agent forms a Material Entity that carries an Information Carrier Structure Entity that is intended to be used to produce a copy of the Reference Carrier."@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              rdfs:label "Act of Encoding an Information Carrier Structure Entity
 
 "@en ;
@@ -123,7 +123,7 @@ cco:AggregateOfInformationCarrierCopies rdf:type owl:Class ;
                              dcterms:created "2023-02-17T12:20:30-05:00"^^xsd:dateTime ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              cco:definition "An Object Aggregate whose members consist of a Reference Carrier and the information descendant copies of that Reference Carrier."@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              cco:elucidation "A duplication history is a chain of Acts of Duplication where the output of one Act of Duplication is the reference carrier for the next Act of Duplication." ;
                              cco:issue "Does duplication history need to be added as a term?" ;
                              rdfs:label "Aggregate of Information Carrier Copies"@en ;
@@ -135,7 +135,7 @@ cco:AggregateOfDuplicateInformationCarriers rdf:type owl:Class ;
                              dcterms:created "2023-01-13T09:18:21-05:00"^^xsd:dateTime ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              cco:definition "An Aggregate of Information Carrier Copies all of whose members belong to the aggregate only because of one or more Acts of Duplication."@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              cco:elucidation "A duplication history is a chain of Acts of Duplication where the output of one Act of Duplication is the reference carrier for the next Act of Duplication." ;
                              cco:issue "Does duplication history need to be added as a term?" ;
                              rdfs:label "Aggregate of Duplicate Information Carriers"@en ;
@@ -147,7 +147,7 @@ cco:AggregateOfPseudoDuplicateInformationCarriers rdf:type owl:Class ;
                              dcterms:created "2023-01-13T09:38:29-05:00"^^xsd:dateTime ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              cco:definition "An Aggregate of Information Carrier Copies whose members belong to the aggregate not only because of one or more Acts of Duplication."@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              cco:elucidation "A duplication history is a chain of Acts of Duplication where the output of one Act of Duplication is the reference carrier for the next Act of Duplication." ;
                              cco:issue "Does duplication history need to be added as a term?" ;
                              rdfs:label "Aggregate of Pseudo-Duplicate Information Carriers"@en ;
@@ -161,7 +161,7 @@ cco:has_information_descendent_copy rdf:type owl:ObjectProperty ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              owl:InverseOf cco:has_information_descendent_copy ;
                              cco:definition "x has information descendant copy y =Def x is a Reference Carrier that participates in Act of Copying that has output y."@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              rdfs:label "has information descendent copy"@en ;
                              skos:prefLabel "has information descendent copy"@en .
 
@@ -172,7 +172,7 @@ cco:has_information_ancestor_copy rdf:type owl:ObjectProperty ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              owl:InverseOf cco:has_information_descendent_copy ;
                              cco:definition "x has information ancestor copy y =Def y has information descendant copy x."@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              rdfs:label "has information ancestor copy"@en ;
                              skos:prefLabel "has information ancestor copy"@en . 
 
@@ -182,7 +182,7 @@ cco:is_a_canonical_copy_of rdf:type owl:ObjectProperty ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              owl:InverseOf cco:has_canonical_copy ;
                              cco:definition "x is a canonical copy of y, if x is the output of an Act of Copying that is a Process of Proper Functioning, y was the Reference Carrier in that Act of Copying, and there is no sufficient reason to doubt the faithfulness of x as a copy."@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              rdfs:label "is a canonical copy of"@en ;
                              skos:prefLabel "is a canonical copy of"@en . 
 
@@ -193,7 +193,7 @@ cco:has_canonical_copy rdf:type owl:ObjectProperty ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              owl:InverseOf cco:is_a_canonical_copy_of ;
                              cco:definition "x has canonical copy x, if y is a canonical copy of x."@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              rdfs:label "has canonical copy"@en ;
                              skos:prefLabel "has canonical copy"@en . 
 
@@ -204,7 +204,7 @@ cco:is_a_canonical_member_of rdf:type owl:ObjectProperty ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              owl:InverseOf cco:has_canonical_member ;
                              cco:definition "x is a conical member of y, if x is the output of an Act of Copying that is a Process of Proper Functioning, and the Reference Carrier of x is the earliest ancestor of Aggregate of Information Carriers y."@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              rdfs:label "is a canonical member of"@en ;
                              skos:prefLabel "is a canonical member of"@en .
 
@@ -214,6 +214,6 @@ cco:has_canonical_member rdf:type owl:ObjectProperty ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              owl:InverseOf cco:is_a_canonical_member_of ;
                              cco:definition "x has canonical member y, if y is a canonical member of x."@en ;
-                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
+                             cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/ActOfCopyingOntology"^^xsd:anyURI ;
                              rdfs:label "has canonical member"@en ;
                              skos:prefLabel "has canonical member"@en . 
