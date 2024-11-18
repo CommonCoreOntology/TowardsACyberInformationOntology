@@ -1,65 +1,11 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
 
-# Shapes Graph
-[] rdf:type sh:NodeShape ;
-   sh:targetClass cco:ActOfEncoding ;
-   sh:property [
-       sh:path rdfs:label ;
-       sh:datatype xsd:string ;
-       sh:minCount 1 ;
-       sh:message "Instances of cco:ActOfEncoding must have a label." ;
-   ] ;
-   sh:property [
-       sh:path cco:definition ;
-       sh:datatype xsd:string ;
-       sh:minCount 1 ;
-       sh:message "Instances of cco:ActOfEncoding must have a definition." ;
-   ] .
-
-# Validate cco:ActOfCopying
-[] rdf:type sh:NodeShape ;
-   sh:targetClass cco:ActOfCopying ;
-   sh:property [
-       sh:path cco:definition ;
-       sh:datatype xsd:string ;
-       sh:minCount 1 ;
-       sh:message "Instances of cco:ActOfCopying must have a definition." ;
-   ] ;
-   sh:property [
-       sh:path rdfs:label ;
-       sh:datatype xsd:string ;
-       sh:minCount 1 ;
-       sh:message "Instances of cco:ActOfCopying must have a label." ;
-   ] .
-
-# Object Property: cco:has_information_descendent_copy
-[] rdf:type sh:PropertyShape ;
-   sh:targetObjectsOf cco:has_information_descendent_copy ;
-   sh:class cco:ReferenceCarrier ;
-   sh:message "Objects of cco:has_information_descendent_copy must be of type cco:ReferenceCarrier." .
-
-# Object Property: cco:is_a_canonical_copy_of
-[] rdf:type sh:PropertyShape ;
-   sh:targetObjectsOf cco:is_a_canonical_copy_of ;
-   sh:class cco:ReferenceCarrier ;
-   sh:message "Objects of cco:is_a_canonical_copy_of must be of type cco:ReferenceCarrier." .
-
-# Validate Properties of cco:ReferenceCarrier
-[] rdf:type sh:NodeShape ;
-   sh:targetClass cco:ReferenceCarrier ;
-   sh:property [
-       sh:path rdfs:label ;
-       sh:datatype xsd:string ;
-       sh:minCount 1 ;
-       sh:message "Instances of cco:ReferenceCarrier must have a label." ;
-   ] ;
-   sh:property [
-       sh:path cco:definition ;
-       sh:datatype xsd:string ;
-       sh:minCount 1 ;
-       sh:message "Instances of cco:ReferenceCarrier must have a definition." ;
-   ] .
+ex:ExampleShape a sh:NodeShape ;
+    sh:targetClass ex:TargetClass ;
+    sh:property [
+        sh:path ex:property ;       # Specify the property being constrained
+        sh:datatype xsd:string ;   # Additional constraints
+        sh:minCount 1 ;            # Example constraint: at least one occurrence
+    ] .
