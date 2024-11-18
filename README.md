@@ -1,1 +1,1 @@
-[![SHACL status](https://github.com/username/reponame/actions/workflows/workflowname.yml/badge.svg)](https://github.com/username/reponame/actions/workflows/workflowname.yml)
+[![SHACL status](https://github.com/CommonCoreOntology/TowardsACyberInformationOntology/actions/workflows/shacl.yml/badge.svg)](https://github.com/CommonCoreOntology/TowardsACyberInformationOntology/actions/workflows/shacl.yml)
