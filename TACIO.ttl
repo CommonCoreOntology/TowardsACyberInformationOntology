@@ -110,12 +110,8 @@ cco:ActOfEncodingAnInformationCarrierStructureEntity rdf:type owl:Class ;
                              dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
                              cco:definition "An Act of Encoding, that is intended to be an occurrent part of an act of copying, wherein an Agent forms a Material Entity that carries an Information Carrier Structure Entity that is intended to be used to produce a copy of the Reference Carrier."@en ;
                              cco:is_curated_in_ontology "http://www.ontologyrepository.com/CommonCoreOntologies/Exp/NewInformationOntology"^^xsd:anyURI ;
-                             rdfs:label "Act of Encoding an Information Carrier Structure Entity
-
-"@en ;
-                             skos:prefLabel "Act of Encoding an Information Carrier Structure Entity
-
-"@en .
+                             rdfs:label "Act of Encoding an Information Carrier Structure Entity"@en ;
+                             skos:prefLabel "Act of Encoding an Information Carrier Structure Entity"@en .
 
 ###  http://www.ontologyrepository.com/CommonCoreOntologies/AggregateOfInformationCarrierCopies
 cco:AggregateOfInformationCarrierCopies rdf:type owl:Class ;
