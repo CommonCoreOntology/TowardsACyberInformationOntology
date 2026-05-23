@@ -1,0 +1,1 @@
+[![SHACL status](https://github.com/CommonCoreOntology/TowardsACyberInformationOntology/actions/workflows/shacl.yml/badge.svg)](https://github.com/CommonCoreOntology/TowardsACyberInformationOntology/actions/workflows/shacl.yml)

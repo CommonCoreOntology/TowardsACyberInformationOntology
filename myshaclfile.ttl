@@ -1,0 +1,11 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ex: <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:ExampleShape a sh:NodeShape ;
+    sh:targetClass ex:TargetClass ;
+    sh:property [
+        sh:path ex:property ;       # Specify the property being constrained
+        sh:datatype xsd:string ;   # Additional constraints
+        sh:minCount 1 ;            # Example constraint: at least one occurrence
+    ] .
